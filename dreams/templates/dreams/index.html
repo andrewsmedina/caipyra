@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="//caipyra.python.org.br/img/caipyra_logo_2016.png" alt="Caipyra 2016">
+                    <img class="img-responsive" src="http://caipyra.python.org.br/img/caipyra_logo_2016.png" alt="Caipyra 2016">
                     <div class="intro-text">
                         <span class="skills color-yellow">O único evento de Python com Quentão e Paçoquinha!</span>
                         <h3>Quantos sonhos você realizou aqui no Caipyra?</h3>
@@ -18,8 +18,12 @@
                     </a>
                     <form method="POST" class="form-dreams">
                         {% csrf_token %}
-                        <p>{{ form.counter }}<p>
-                        <p><button class="btn btn-lg btn-buy btn-default" type="submit">Enviar</button></p>
+                        <p>
+                            <input id="id_counter" placeholder="1, 2, 4, 3000..." name="counter" type="number">
+                        <p>
+                        <p>
+                            <button class="btn btn-lg btn-buy btn-default" type="submit">Enviar</button>
+                        </p>
                     </form>
                 </div>
             </div>

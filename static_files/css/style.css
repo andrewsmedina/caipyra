@@ -149,3 +149,10 @@ header .btn-buy {
 .form-dreams {
     display: none;
 }
+
+input#id_counter {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
