@@ -17,6 +17,7 @@
                         Diz pra gente :)
                     </a>
                     <form method="POST">
+                        {% csrf_token %}
                         {{ form.as_p }}
                         <p><button type="submit">submit</button></p>
                     </form>
