@@ -18,7 +18,7 @@
                     </a>
                     <form method="POST" class="form-dreams">
                         {% csrf_token %}
-                        {{ form.as_p }}
+                        <p>{{ form.counter }}<p>
                         <p><button class="btn btn-lg btn-buy btn-default" type="submit">Enviar</button></p>
                     </form>
                 </div>
