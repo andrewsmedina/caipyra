@@ -10,6 +10,17 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c45b7', endColorstr='#3fa350',GradientType=0 );
 }
 
+a, a:hover, a:focus, a:active, a.active {
+    outline: 0;
+    color: rgba(0,0,0,.5);
+}
+a {
+    color: #EE5A28;
+    text-decoration: none;
+    background: transparent;
+    transition: all 500ms ease;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
@@ -99,15 +110,6 @@ header .btn-buy {
     -ms-user-select: none;
     user-select: none;
 }
-a, a:hover, a:focus, a:active, a.active {
-    outline: 0;
-    color: #EE5A28;
-}
-a {
-    color: #EE5A28;
-    text-decoration: none;
-    background: transparent;
-}
 
 @media (min-width: 1200px) {
     .col-lg-12 {
@@ -142,4 +144,8 @@ a {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.form-dreams {
+    display: none;
 }

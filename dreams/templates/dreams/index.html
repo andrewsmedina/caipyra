@@ -16,14 +16,15 @@
                     <a href="#" class="btn btn-lg btn-buy btn-default">
                         Diz pra gente :)
                     </a>
-                    <form method="POST">
+                    <form method="POST" class="form-dreams">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <p><button type="submit">submit</button></p>
+                        <p><button class="btn btn-lg btn-buy btn-default" type="submit">Enviar</button></p>
                     </form>
                 </div>
             </div>
         </div>
     </header>
+    <script src="{% static "js/app.js" %}"></script>
 </body>
 </html>
