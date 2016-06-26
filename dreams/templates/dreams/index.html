@@ -1,6 +1,10 @@
+{% load staticfiles %}
 <html>
+<head>
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
 <body>
-  <form actions="POST">
+  <form method="POST">
     {{ form.as_p }}
     <p><button type="submit">submit</button></p>
   </form>

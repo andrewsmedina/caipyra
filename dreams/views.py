@@ -4,5 +4,9 @@ from .forms import DreamsForm
 
 
 def dreams(request):
-    context = {"form": DreamsForm()}
+    form = DreamsForm(request.POST or {})
+    if form.is_valid():
+        form.save()
+        return redirect("/ok/")
+    context = {"form": form}
     return render(request, "dreams/index.html", context)
