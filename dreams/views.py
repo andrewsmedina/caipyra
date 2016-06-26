@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from .forms import DreamsForm
+
 
 def dreams(request):
-    return render(request, "dreams/index.html")
+    context = {"form": DreamsForm()}
+    return render(request, "dreams/index.html", context)
