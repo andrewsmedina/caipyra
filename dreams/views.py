@@ -4,7 +4,7 @@ from .forms import DreamsForm
 
 
 def dreams(request):
-    form = DreamsForm(request.POST or {})
+    form = DreamsForm(request.POST or None)
     if form.is_valid():
         form.save()
         return redirect("/ok/")
