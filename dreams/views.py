@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def dreams(request):
+    return render(request, "dreams/index.html")
