@@ -53,9 +53,10 @@ header {
 }
 
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    margin-top: 100px;
     display: block;
-    width: 100% \9;
-    max-width: 100%;
+    width: 80% \9;
+    max-width: 80%;
     height: auto;
 }
 
