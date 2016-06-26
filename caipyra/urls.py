@@ -5,7 +5,6 @@ from django.conf.urls.static import static
 
 from dreams.views import dreams, thankyou
 
-
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', dreams),
